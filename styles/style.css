@@ -267,20 +267,17 @@ h1 {
 h2 {
   font-size: 45px;
   font-size: 4.5rem;
-  line-height: 99.8px;
 }
 
 h3 {
   font-size: 40px;
   font-size: 4rem;
-  line-height: 58px;
   letter-spacing: 1.3px;
 }
 
 h4 {
   font-size: 25px;
   font-size: 2.5rem;
-  line-height: 58px;
   letter-spacing: 0.8px;
 }
 
@@ -308,6 +305,33 @@ p {
 .left-10 {
   width: 90%;
   margin-left: auto;
+}
+
+.grid-menu {
+  -ms-grid-row: 1;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: menu;
+}
+
+.grid-main {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+}
+
+.grid-footer {
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: footer;
+}
+
+.icon {
+  background: #FDD908;
+  padding: 1.5rem;
+  border-radius: 50%;
 }
 
 header {
@@ -369,4 +393,35 @@ ul li a:focus, ul li a:hover {
 
 .main-section-1 {
   background-color: #EAFEFC;
+  padding-top: 30rem;
+}
+
+.main-section-1 .wrapper-80 {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+  -ms-grid-rows: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+  gap: 3rem;
+}
+
+.main-section-1 .grid-1-2-2 {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: 'menu main main' 'menu footer footer';
+  justify-items: start;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: start;
+  gap: 0 2rem;
+}
+
+.main-section-1 .grid-1-2-2 h2 {
+  color: #0D457F;
+}
+
+.main-section-1 .grid-1-2-2 i {
+  font-size: 2rem;
+  color: #0D457F;
 }

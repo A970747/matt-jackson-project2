@@ -39,18 +39,18 @@ h1 {
 
 h2 {
     @include fontSize(45);
-    line-height: 99.8px;
+    // line-height: 99.8px;
 }
 
 h3 {
     @include fontSize(40);
-    line-height: 58px;
+    // line-height: 58px;
     letter-spacing: 1.3px;
 }
 
 h4 {
     @include fontSize(25);
-    line-height: 58px;
+    // line-height: 58px;
     letter-spacing: 0.8px;
 }
 
@@ -82,4 +82,20 @@ p {
     margin-left: auto;
 }
 
+.grid-menu {
+    grid-area: menu;
+}
 
+.grid-main {
+    grid-area: main;
+}
+
+.grid-footer {
+    grid-area: footer;
+}
+
+.icon {
+    background: $primaryAccent;
+    padding: 1.5rem;
+    border-radius: 50%;
+}
