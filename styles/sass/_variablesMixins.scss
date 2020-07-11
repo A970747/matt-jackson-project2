@@ -1,0 +1,46 @@
+// variables
+
+// font colours + pseudo states
+$primaryBlack: #040405;
+$primaryWhite: #FDFDFD;
+
+$primaryBackground: #0D457F;
+$secondaryBackground: #EAFEFC;
+$tertiaryBackground: #FDD908;
+
+$primaryAccent: #FDD908;
+$secondaryAccent: #0D457F;
+
+$primaryFontColor: #0D457F;
+$secondaryFontcolor: #FDD908;
+
+$primaryFont: 'IM Fell English', serif;
+$secondaryFont: 'Roboto', sans-serif;
+
+$anchorTagHoverFocus: 'a:focus, a:hover';
+
+@mixin fontSize($sizeValue){
+    font-size: $sizeValue * 1px;
+    font-size: ($sizeValue/10) * 1rem;
+}
+
+@mixin flexCenter() {
+    display: grid;
+    justify-items: center;
+    align-items: center;
+}
+
+@mixin navigation() {
+    @include fontSize(20);
+    line-height: 29px;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+
+@mixin clearfix {
+    &::after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}

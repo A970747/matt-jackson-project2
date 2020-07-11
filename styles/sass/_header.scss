@@ -1,0 +1,26 @@
+header {
+    position: relative;
+    width: 100%;
+    background-image: url(../../images/home-header.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 80vh;
+
+    div {
+        @include  clearfix();
+    }
+
+    h1 {
+        display: inline-block;
+        position: relative;
+        width: 50%;
+    }
+
+    img {
+        float: right;
+        width: 50%;
+        clear: both;
+    }
+}
+
+
