@@ -34,6 +34,7 @@ h4 {
 
 h1 {
     @include fontSize(79);
+    color: $secondaryFontcolor;
 }
 
 h2 {
@@ -59,21 +60,26 @@ p {
     letter-spacing: 1px;
 }
 
-.wrapper-90 {
-    width: 90%;
-    max-width: 1200px;
+.wrapper-80 {
+    width: 80%;
+    // max-width: 1200px;
     margin: 0 auto;
 }
 
-.wrapper-80 {
-    width: 90%;
-    max-width: 960px;
+.wrapper-60 {
+    width: 60%;
+    // max-width: 960px;
     margin: 0 auto;
 }
 
 .wrapper-50 {
     width: 50%;
     height: 100%;
+}
+
+.left-10 {
+    width: 90%;
+    margin-left: auto;
 }
 
 
