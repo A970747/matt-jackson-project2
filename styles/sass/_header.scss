@@ -1,5 +1,4 @@
 header {
-    background-image: url(../../images/home-header.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -15,5 +14,22 @@ header {
 
     img {
         flex:1 1 100%;
+    }
+
+    &.home-header {
+        background-image: url(../images/home-header.jpg);
+    }
+
+    &.blog-header {
+        background-image: url(../images/blog-header.jpg);
+    }
+
+    &.contact-header {
+        background-image: url(../images/contact-header.jpg);
+    }
+
+    .blog-h1 {
+        color: $primaryWhite;
+        padding: 10% 0;
     }
 }

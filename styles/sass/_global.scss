@@ -34,7 +34,7 @@ h4 {
 
 h1 {
     @include fontSize(79);
-    color: $secondaryFontcolor;
+    color: $secondaryFontColor;
 }
 
 h2 {
@@ -56,25 +56,31 @@ h4 {
 
 p {
     @include fontSize(20);
+    font-family: $secondaryFont;
     // line-height: 28px;
     letter-spacing: 1px;
 }
 
+.wrapper-100 {
+    max-width: 1920px;
+    margin: 0 auto;
+}
+
 .wrapper-80 {
     width: 80%;
-    // max-width: 1200px;
+    max-width: 1600px;
     margin: 0 auto;
 }
 
 .wrapper-60 {
     width: 60%;
-    // max-width: 960px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
 .wrapper-50 {
     width: 50%;
-    height: 100%;
+    margin: 0 auto;
 }
 
 .left-10 {
@@ -82,8 +88,23 @@ p {
     margin-left: auto;
 }
 
+.flexed-div {
+    display: flex;
+    flex-flow: row wrap;
+}
+
+.grid-1-2-2 {
+    display: grid;
+    grid-template-areas: 'menu main main'
+                        'menu footer footer';
+}
+
 .grid-menu {
     grid-area: menu;
+}
+
+.grid-header {
+    grid-area: header;
 }
 
 .grid-main {

@@ -1,20 +1,18 @@
 ul {
     @include navigation();
-    color: $primaryWhite;
-    display: flex;
-    
-        li {
-            margin-top: 5vh;
-            padding-right: 6rem;
 
-            a {
-                border-bottom: 3px solid transparent;
-                transition: .3s ease-in;
-            }
+    li {
+        margin-top: 5vh;
+        padding-right: 5%;
 
-            #{$anchorTagHoverFocus} {
-                border-bottom: 3px solid $primaryAccent;
-                transition: .3s ease-in;
-            }
+        a {
+            border-bottom: 3px solid transparent;
+            transition: .3s ease-in;
         }
+
+        #{$anchorTagHoverFocus} {
+            border-bottom: 3px solid $primaryAccent;
+            transition: .3s ease-in;
+        }
+    }
 }

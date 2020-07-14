@@ -1,0 +1,125 @@
+@media (max-width: 768px) {
+    header {
+        div {
+            margin-top: 3rem;
+        }
+    }
+
+    nav {
+        ul {
+            justify-content: space-between;
+        }
+    }
+
+    .flexed-div {
+        flex-flow: column wrap;
+        align-items: center;
+
+        div {
+            a {
+                margin: 0 auto;
+            }
+        }
+
+        .quadrant-text-right,
+        .quadrant-text-left {
+            justify-content: center;
+            align-items: center;
+        }
+    }
+
+    .left-10 {
+        text-align: center;
+        justify-content: flex-end;
+        flex-direction: column;
+        width: 100%;
+
+        img {
+            width: 70%;
+            border-right: .5rem solid $primaryAccent;
+        }
+    }
+
+    .main-section-1 {
+        padding: 5rem 0;
+    }
+
+    .main-section-3,
+    .main-section-4,
+    .main-section-5,
+    .main-section-6 {
+        padding: 3rem 0;
+        text-align: center;
+    }
+
+    .blue-background {
+        img {
+            position: static;
+            width: 100%;
+            padding-top: 5rem;
+        }
+    }
+
+    .blog-post-image {
+        width: 10       0%;
+        padding: 0;
+        filter: none;
+        z-index: 1000;
+    }
+
+    .blog-flexed-div {
+        overflow-x: hidden;
+
+        .fd-2 {
+            flex-basis: 100%;
+        }
+    }
+
+    .blog-post {
+        padding: 10rem;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .blog-left-positioning {
+        padding: 4rem 0;
+    }
+
+    .contact-blog-form {
+        padding: 1rem;
+        margin: 0;
+    }
+
+    .contact-left-positioning {
+        margin-top: 5rem;
+        text-align: center;
+    }
+
+}
+
+@media (max-width: 1200px) {
+
+    h1 {
+        font-size: calc(1rem + 5vw);
+    }
+    
+    h2 {
+        font-size: calc(1rem + 3vw);
+    }
+    
+    h3 {
+        font-size: calc(1rem + 2vw);
+    }
+    
+    h4 {
+        font-size: calc(1rem + 2vw);
+    }
+    
+    p {
+        font-size: calc(1rem + 2vw);
+    }
+
+    li {
+        font-size: calc(1rem + 1vw);
+    }
+}

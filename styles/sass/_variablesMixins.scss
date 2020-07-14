@@ -12,7 +12,7 @@ $primaryAccent: #FDD908;
 $secondaryAccent: #0D457F;
 
 $primaryFontColor: #0D457F;
-$secondaryFontcolor: #FDD908;
+$secondaryFontColor: #FDD908;
 
 $primaryFont: 'IM Fell English', serif;
 $secondaryFont: 'Roboto', sans-serif;
@@ -24,10 +24,15 @@ $anchorTagHoverFocus: 'a:focus, a:hover';
     font-size: ($sizeValue/10) * 1rem;
 }
 
-@mixin flexCenter() {
+@mixin gridCenter() {
     display: grid;
     justify-items: center;
     align-items: center;
+}
+
+@mixin flexCenter() {
+    display: flex;
+    justify-content: center;
 }
 
 @mixin navigation() {
@@ -35,12 +40,30 @@ $anchorTagHoverFocus: 'a:focus, a:hover';
     line-height: 29px;
     letter-spacing: 1px;
     text-transform: capitalize;
+    color: $primaryWhite;
+    display: flex;
+    
 }
 
-@mixin clearfix {
+@mixin clearfix() {
     &::after {
         content: '';
         display: table;
         clear: both;
     }
+}
+
+@mixin button() {
+    @include fontSize(22.4);
+    font-family: $primaryFont;
+    background-color: $primaryAccent;
+    color: $primaryFontColor;
+    text-transform: uppercase;
+    padding: 1rem;
+}
+
+@mixin hideLTR() {
+    border-top-style: hidden;
+    border-right-style: hidden;
+    border-left-style: hidden;
 }

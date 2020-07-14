@@ -1,0 +1,9 @@
+.footer {
+    width: 100%;
+    height: 3rem;
+    color: $primaryFontColor;
+    background-color: $tertiaryBackground;
+    text-align: center;
+    @include fontSize(20);
+}
+
